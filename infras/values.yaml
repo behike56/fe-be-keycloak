@@ -1,0 +1,4 @@
+image:
+  repository: my-local-registry/keycloak
+  tag: my-custom-tag
+  pullPolicy: IfNotPresent
