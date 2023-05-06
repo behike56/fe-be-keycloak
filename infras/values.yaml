@@ -1,4 +1,4 @@
 image:
-  repository: my-local-registry/keycloak
-  tag: my-custom-tag
+  repository: behike56/keycloak-test:latest
+  tag: 0.0.1
   pullPolicy: IfNotPresent
