@@ -72,3 +72,21 @@ helmfileコマンドを使用。
 1. kubectl
 2. nerdctl
 3. gcloud
+
+``` shell
+helm upgrade --install keycloak codecentric/keycloakx -f values.yaml --namespace keycloak
+
+helm upgrade keycloak codecentric/keycloakx -f values.yaml --namespace keycloak
+
+helmfile -f helmfile-keycloak.yaml apply
+
+helmfile -f helmfile-keycloak.yaml destroy
+
+cat 278c9edda242a0c7efeea80804b5164f43421015 | docker login -u _json_key --password-stdin https://us-west1-a-docker.pkg.dev
+
+WARNING! Your password will be stored unencrypted in /home/<USERNAME>/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+```

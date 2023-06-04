@@ -1,4 +1,6 @@
+replicas: 1
+
 image:
-  repository: behike56/keycloak-test:latest
-  tag: 0.0.1
+  repository: quay.io/keycloak/keycloak
+  tag: latest
   pullPolicy: IfNotPresent
